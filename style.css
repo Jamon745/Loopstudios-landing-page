@@ -1,0 +1,536 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+header {
+  background-image: url(../images/desktop/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  padding-inline: 5vw;
+  padding-block: 5vh;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  color: #fff;
+}
+
+.ham {
+  display: none;
+}
+
+header > p {
+  border: 2px solid white;
+  width: 35%;
+  padding: 15px;
+  color: #fff;
+  font-size: 3.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-top: 10vh;
+  transition: 5s;
+  transition-delay: 3s;
+  transform: translate(200px);
+}
+
+main {
+  height: 70vh;
+  display: flex;
+  margin: 50px 70px;
+}
+
+main div:nth-child(1) {
+  height: 70vh;
+  width: 50vw;
+  background-image: url(../images/desktop/image-interactive.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main div:nth-child(2) {
+  background-color: rgb(255, 255, 255);
+  width: 30vw;
+  height: 48vh;
+  position: absolute;
+  left: 7vw;
+  top: 120vh;
+  /* padding-inline: 40px; */
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main div:nth-child(2) h1 {
+  font-size: 3rem;
+}
+
+main div:nth-child(2) p {
+  padding-block: 20px;
+}
+
+main + div {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: 65px;
+  text-transform: uppercase;
+}
+
+main + div a {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+article {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  margin: 100px;
+  gap: 10px;
+  /* padding: 0px o; */
+}
+
+article div {
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+article h1 {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 95%;
+  font-weight: lighter;
+  padding-left: 20px;
+}
+
+article div:nth-child(1) {
+  background-image: url(../images/desktop/image-deep-earth.jpg);
+}
+
+article div:nth-child(2) {
+  background-image: url(../images/desktop/image-night-arcade.jpg);
+}
+
+article div:nth-child(3) {
+  background-image: url(../images/desktop/image-soccer-team.jpg);
+}
+
+article div:nth-child(4) {
+  background-image: url(../images/desktop/image-grid.jpg);
+}
+article div:nth-child(5) {
+  background-image: url(../images/desktop/image-from-above.jpg);
+}
+article div:nth-child(6) {
+  background-image: url(../images/desktop/image-pocket-borealis.jpg);
+}
+
+article div:nth-child(7) {
+  background-image: url(../images/desktop/image-curiosity.jpg);
+}
+
+article div:nth-child(8) {
+  background-image: url(../images/desktop/image-fisheye.jpg);
+}
+
+footer {
+  height: 20vh;
+  color: white;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+footer img {
+  margin-bottom: 20px;
+  margin-right: 15px;
+}
+
+footer a {
+  color: white;
+  margin-right: 15px;
+}
+
+footer span {
+  color: gray;
+}
+
+@media only screen and (max-width: 320px) {
+  header {
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    width: 80vw;
+    padding: 15px;
+    color: #fff;
+    font-size: 0.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    transition-delay: 1s;
+    transform: translateY(10px);
+  }
+
+  main {
+    margin: 10px;
+    height: 200vh;
+  }
+
+  main div:nth-child(1) {
+    height: 35vh;
+    width: 95vw;
+    position: absolute;
+    
+  }
+
+  main div:nth-child(2) {
+    height: 40vh;
+    right: 0;
+    top: 70vh;
+    padding-inline: 20px;
+    width: 100vw;
+    position: relative;
+  }
+
+  main div:nth-child(2) h1 {
+    font-size: 1rem;
+   top: 40vh;
+  }
+
+  main div:nth-child(2) p {
+    padding-block: 10px;
+    text-align: justify;
+  }
+
+  main + div {
+    margin-top: 10vh;
+    height: 7vh;
+    margin-inline: 20px;
+    margin-top: 20vh;
+  }
+
+  article {
+    grid-template-columns: 100%;
+    width: 95vw;
+    margin: 10px;
+    height: 600vh;
+  }
+
+  article div {
+    height: 70vh;
+  }
+
+  footer {
+    height: 30vh;
+    padding: 10px 20px;
+  }
+
+  footer img {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  header {
+    background-image: url(./images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .ham {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  header > p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    width: 70vw;
+    padding: 15px;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    transition-delay: 0s;
+    transform: translate(25px);
+  }
+
+  main {
+    margin: 10px;
+  }
+
+  main div:nth-child(1) {
+    height: 35vh;
+    width: 95vw;
+    position: absolute;
+  }
+
+  main div:nth-child(2) {
+    height: 20vh;
+    right: 0;
+    top: 50vh;
+    padding-inline: 20px;
+    width: 100vw;
+    position: relative;
+  }
+
+  main div:nth-child(2) h1 {
+    font-size: 3rem;
+  }
+
+  main div:nth-child(2) p {
+    padding-block: 10px;
+    text-align: justify;
+    line-height: 2rem;
+  }
+
+  main + div {
+    margin-top: 10vh;
+    height: 7vh;
+    margin-inline: 20px;
+    margin-top: 20vh;
+  }
+
+  article {
+    grid-template-columns: 100%;
+    width: 95vw;
+    margin: 10px;
+    height: 600vh;
+  }
+
+  article div {
+    height: 70vh;
+  }
+
+  footer {
+    height: 30vh;
+    padding: 10px 20px;
+  }
+
+  footer img {
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .ham {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  header > p {
+    width: 60vw;
+    font-size: 4rem;
+    text-transform: uppercase;
+    transition-delay: 1s;
+    transform: translate(80px);
+  }
+
+  main {
+    height: 40vh;
+  }
+  main div:nth-child(1) {
+    background-size: contain;
+    height: 35vh;
+    width: 50vw;
+  }
+
+  main div:nth-child(2) {
+    width: 50vw;
+    top: 20vh;
+    left: 42vw;
+    height: 35vh;
+  }
+
+  main + div {
+    height: 15vh;
+  }
+
+  article {
+    grid-template-columns: 50% 50%;
+    height: 300vh;
+  }
+
+  article h1 {
+    padding-top: 150%;
+  }
+
+  footer {
+    height: 15vh;
+    padding: 20px 40px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    background-image: url(../images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    padding-inline: 5vw;
+    padding-block: 5vh;
+  }
+
+  header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+  }
+
+  nav ul li a {
+    color: #fff;
+  }
+
+  .ham {
+    display: none;
+  }
+
+  header > p {
+    border: 2px solid white;
+    width: 35%;
+    padding: 15px;
+    color: #fff;
+    font-size: 3.2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-top: 10vh;
+    transition-delay: 1s;
+    transform: translate(300px);
+  }
+
+  main {
+    height: 70vh;
+    display: flex;
+    margin: 50px 70px;
+  }
+
+  main div:nth-child(1) {
+    height: 70vh;
+    width: 60vw;
+    background-image: url(../images/desktop/image-interactive.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  main div:nth-child(2) {
+    background-color: rgb(255, 255, 255);
+    width: 40vw;
+    height: 48vh;
+    position: absolute;
+    right: 12vw;
+    top: 120vh;
+    padding-inline: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  main div:nth-child(2) h1 {
+    font-size: 3rem;
+  }
+
+  main div:nth-child(2) p {
+    padding-block: 20px;
+  }
+
+  main + div {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: 65px;
+    text-transform: uppercase;
+  }
+
+  main + div a {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  article {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    gap: 10px;
+  }
+
+  article div {
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  article h1 {
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 80%;
+    font-weight: lighter;
+    padding-left: 20px;
+  }
+}
